@@ -14,7 +14,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	
 
-	<link rel="stylesheet" href="./public/accet/css/style.css">
+	<link rel="stylesheet" href="/public/accet/css/style.css">
 	
 	<title>Elders</title>
 	
