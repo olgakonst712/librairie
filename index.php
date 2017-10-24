@@ -6,9 +6,9 @@
 	    
 		<?php foreach ($films as $film): ?>
 
-			<div class="sectionfilm" >
+			<div class="sectionfilm"><a href="app/views/parts/single.php"><img src="public/asset/image/<?php echo $film['film_photo_url']; ?>"></a>
 				
-		    	<img src="public/asset/image/<?php echo $film['film_photo_url']; ?>">
+		    	
 		    	
 			</div>
 
