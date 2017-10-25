@@ -89,7 +89,7 @@ h1#logo a img{ float:left; width:150px; height:150px; text-indent: -4000px; }
 
 .content { padding-bottom:28px; }
 .content .date { font-size:10px; color:#fff; }
-.content img { float:left; width:68px; padding-right:8px; }
+.content img { float:left; width:; padding-right:8px; }
 .content p { font-size:13px; color:#fff; line-height:16px; }
 .content a { font-size:11px;  }
 
@@ -189,9 +189,10 @@ h1#logo a img{ float:left; width:150px; height:150px; text-indent: -4000px; }
       margin-bottom: 20px;
       border: 1px solid transparent; }
       .movie-list .movie .movie-poster img {
+      	position: absolute;
         display: block;
         width: 100%;
-        max-width: 100%;
+        
         height: auto;
         -webkit-transition: .3s ease;
                 transition: .3s ease; }
@@ -219,7 +220,11 @@ h1#logo a img{ float:left; width:150px; height:150px; text-indent: -4000px; }
   .movie-meta li, .starring li {
     margin-bottom: 10px; }
     .midle {
-    width: 50%; }
+    width: 50%;
+    float:left; }
 
-
+.entry-content {
+    
+    float:left; }
+    .movie-poster img
 
