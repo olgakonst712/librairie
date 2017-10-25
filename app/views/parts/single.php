@@ -27,11 +27,11 @@
 						</div>
 
 						<div class="content">
-							<div class="row">
-								<div class="col-md-6">
+							<div class="main">
+								<div class="midle">
 									<figure class="movie-poster"><img src="../../../public/asset/image/movie1.jpg" alt="#"></figure>
 								</div>
-								<div class="col-md-6">
+								<div class="midle">
 									<h2 class="movie-title">Titanic</h2>
 									<div class="movie-summary">
 										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
