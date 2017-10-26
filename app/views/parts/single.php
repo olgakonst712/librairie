@@ -1,3 +1,14 @@
+<?php 
+include 'database/connect.php'
+
+if (isset($_GET['genre'])){
+  $query = $bdd->query('SELECT * FROM film WHERE `film_genre`="'. $_GET['genre'] .'"' );
+
+} else {
+  $query = $bdd->query('SELECT * FROM film');
+
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
