@@ -47,10 +47,10 @@ include 'database/connect.php'
       </form>
     </div>
     <ul>
-      <li><a href="#">CLASSIQUE</a></li>
-      <li><a href="#">D'HORREUR</a></li>
-      <li><a href="#">POUR ENFANT</a></li>
-      <li><a href="#">COMEDIE</a></li>
+      <li><a href="?genre=Classique">CLASSIQUE</a></li>
+      <li><a href="?genre=Horreur">D'HORREUR</a></li>
+      <li><a href="?genre=Enfant">POUR ENFANT</a></li>
+      <li><a href="?genre=Comedie">COMEDIE</a></li>
     </ul>
   </div>
   <!-- end Sub-Menu --> 

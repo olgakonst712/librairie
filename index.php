@@ -1,4 +1,9 @@
+
 <?php include 'app/views/parts/header.php' ?>
+
+
+
+
   <div id="main">
     <?php foreach ($films as $film): ?>
     <div class="sectionfilm"><a href="app/views/parts/single.php"><img src="public/asset/image/<?php echo $film['film_photo_url']; ?>"></a> </div>
@@ -37,13 +42,13 @@
     </div>
     <div class="content">
       <h4>The Princess and the Frog </h4>
-      <a href="#"><img src="public/asset/image/movie2.jpg" alt="coming soon" /></a>
+      <a href="#"><img src="public/asset/image/movie2.jpg" width="78" alt="coming soon" /></a>
       <p>Walt Disney Animation Studios presents the musical "The Princess and the Frog," an animated comedy set in the great city of New Orleans...</p>
       <a href="#">Read more</a> </div>
     <div class="cl">&nbsp;</div>
     <div class="content">
       <h4>The Princess and the Frog </h4>
-      <a href="#"><img src="public/asset/image/movie1.jpg" alt="coming soon" /></a>
+      <a href="#"><img src="public/asset/image/movie1.jpg" width="78" alt="coming soon" /></a>
       <p>Walt Disney Animation Studios presents the musical "The Princess and the Frog," an animated comedy set in the great city of New Orleans...</p>
       <a href="#">Read more</a> </div>
   </div>

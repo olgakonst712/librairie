@@ -25,7 +25,15 @@ catch (Exception $e)
 // Notre requete à la base de donnée
 // SELECT = prend moi; * = tout ;FROM = de quel tableau ? film = mettreLeNomDeVotreTable
 
-$query = $bdd->query('SELECT * FROM film' );
+if (isset($_GET['genre'])){
+	$query = $bdd->query('SELECT * FROM film WHERE `film_genre`="'. $_GET['genre'] .'"' );
+
+} else {
+	$query = $bdd->query('SELECT * FROM film');
+
+}
+
+
 
 
 $films = $query->fetchAll();
