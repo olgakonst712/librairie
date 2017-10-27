@@ -342,7 +342,7 @@ width:;
 .main-content .container {
 	background: #EAE2D6;
 	border-radius: 5px;
-	padding: 30px;
+	padding: 100px;
 }
 .section-title {
 	font-size: 30px;
@@ -475,9 +475,8 @@ width:;
 	width: 50%;
 	float: left;
 }
-.entry-content {
-	float: left;
-}
+
+
 .movie-summary {
 	padding-bottom: 30px;
 }
