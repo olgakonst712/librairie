@@ -1,14 +1,13 @@
-<?php  /* 
-include '../database/connect.php'
+<?php  
+include '../../../database/connect.php';
+  
+  $id = $_GET['film_id'];
 
-
-  $query = $bdd->query('SELECT * FROM film WHERE `film_titre`="'. $_GET['titre'] .'"' ); */
-
-
-
+  $single_film = $bdd->query('SELECT * FROM film WHERE film_id ="' .$id .'"');
+  $single_film = $single_film->fetchAll();
 
 ?>
-//
+
 
 
 <!DOCTYPE html>
@@ -29,26 +28,40 @@ include '../database/connect.php'
       <div class="content">
         <div class="main">
           <div class="midle">
-            <figure class="movie-poster"><img src="../../../public/asset/image/movie1.jpg" alt="#"></figure>
+          
+
+
+
+
+
+
+
+
+         
+           
+
+
+            <figure class="movie-poster"><img src=<?php echo "../../../public/asset/image/" .$single_film[0]['film_photo_url']; ?>></figure>
+         
           </div>
           <div class="midle">
-            <h2 class="movie-title">Titanic</h2>
+            <h2 class="movie-title"><?php echo $single_film[0]['film_titre']; ?></h2>
             <div class="movie-summary">
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit sed.</p>
+              <p><?php echo $single_film[0]['film_explication']; ?></p>
+              <p>Nemo enim ipsam voluptatem quia 
             </div>
             <ul class="movie-meta">
               <li><strong>Rating:</strong>
-                <div class="star-rating" title="Rated 4.00 out of 5"><span style="width:80%"><strong class="rating">4.00</strong> out of 5</span></div>
+                <div class="star-rating" title="Rated 4.00 out of 5"><span style="width:80%"><strong class="rating"><?php echo $single_film[0]['film_rating']; ?></strong> out of 5</span></div>
               </li>
-              <li><strong>Length:</strong> 98 min</li>
-              <li><strong>Premiere:</strong> 22 March 2013 (USA)</li>
-              <li><strong>Category:</strong> Animation/Adventure/Comedy</li>
+              <li><strong>Length:</strong><?php echo $single_film[0]['film_lenght']; ?></li>
+              <li><strong>Premiere:</strong><?php echo $single_film[0]['film_date_sortie']; ?></li>
+              <li><strong>Category:</strong><?php echo $single_film[0]['film_genre']; ?></li>
             </ul>
             <ul class="starring">
-              <li><strong>Directors:</strong> Kirk de Mico (as Kirk DeMico). Chris Sanders</li>
-              <li><strong>Writers:</strong> Chris Sanders (screenplay), Kirk De Micco (screenplay)</li>
-              <li><strong>Stars:</strong> Nicolas Cage, Ryan Reynolds, Emma Stone</li>
+              <li><strong>Directors:</strong><?php echo $single_film[0]['film_director']; ?></li>
+              
+              <li><strong>Stars:</strong><?php echo $single_film[0]['film_starts']; ?></li>
             </ul>
           </div>
         </div>

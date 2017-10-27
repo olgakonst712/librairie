@@ -6,7 +6,7 @@
 
   <div id="main">
     <?php foreach ($films as $film): ?>
-    <div class="sectionfilm"><a href="app/views/parts/single.php"><img src="public/asset/image/<?php echo $film['film_photo_url']; ?>"></a> </div>
+    <div class="sectionfilm"><a href="app/views/parts/single.php?film_id=<?php echo $film['film_id'];?>"><img src="public/asset/image/<?php echo $film['film_photo_url']; ?>"></a> </div>
     <?php endforeach ?>
   </div>
   <div class="cl">&nbsp;</div>

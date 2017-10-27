@@ -39,5 +39,7 @@ if (isset($_GET['genre'])){
 $films = $query->fetchAll();
 //$imgGalerie = $bdd->query('SELECT * FROM photos LIMIT 50');
 
+ $query2 = $bdd->prepare('SELECT * FROM film');
+           $query2->execute();
 
 ?>
